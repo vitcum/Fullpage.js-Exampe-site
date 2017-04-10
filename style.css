@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.animated .infinite {
+	animation-iteration-count: infinite;
+}
+/* header */
+
+header {
+	position: fixed;
+	z-index: 999;
+}
+
+.hamburger-icon-wrapper {
+    position: absolute;
+    top: 2vh;
+    left: 4vh;
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+}
+
+.hamburger-menu { 
+    transition: all 0.4s ease; 
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 90%;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: #FFFFFF;
+    text-align: center
+}
+
+.hamburger-active .hamburger-menu {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.hamburger-menu-list {
+    transition: all 0.4s ease; 
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2)
+}
+
+.hamburger-menu-list li {
+	display: inline-block;
+	padding-left: 30px;
+}
+
+.hamburger-menu-list a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+.hamburger-active .hamburger-menu-list {
+    transform: translate(-50%, -50%) scale(1)
+}
+
+.fa {
+	padding-bottom: 0;
+	margin-top: 0;
+}
+/* home */
+
+.home {
+	background-image: url("images/dobre2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+	background: cover;
+	text-align: center;
+}
+
+.home h1 {
+	font-size: 55px;
+	font-weight: bolder;
+	letter-spacing: 3px;
+	color: #CD5C5C;
+	margin-left: 100px;
+	margin-top: 200px;
+}
+
+.home p {
+	padding: 5px;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 70px;
+	margin-top: 20px;
+	color: #CD5C5C;
+}
+
+.home .fa {
+	margin: 20px;
+	font-size: 40px;
+	color: #CD5C5C;
+	padding-left: 105px;
+	margin-bottom: 0px;
+}
+
+/* about */
+.about {
+	background-image: url("images/bell.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+	background: cover;
+	text-align: center;
+}
+
+.about h2 {
+	color: #F0E68C;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.about p {
+	margin: 35px;
+	color: #F0E68C;
+	font-size: 25px;
+}
+
+.about a {
+	text-decoration: none;
+	color: white;
+}
+
+.about .btn {
+	background-color: #1A4869
+	border: none;
+	background-color: #FFA500;
+	border-color: #FFA500;
+}
+
+.bounce {
+	color: #FFA500;
+	font-size: 40px;
+	margin-top: 50px;
+}
+
+/* scenery */
+
+.scenery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("images/lepsze2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% auto;
+	background: cover;
+}
+
+.slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+img { 
+	margin: 0 auto;
+	width: 1000px;
+	height: 800px;
+	border: 2px solid #800000;
+}
+
+p {
+	font-size: 30px;
+	color: #800000;
+	margin-top: 20px;
+	font-weight: bolder;
+}
+
+
+/* contact */
+
+.contact {
+	background-image: url("images/pioro1.jpg");
+	background: cover;
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	text-shadow: 2px 2px 2px #000000;
+}
+
+.contact h3 {
+	font-size: 80px;
+	color: #CD5C5C;
+}
+
+.contact p {
+	font-size: 50px;
+}
+
+.fa-envelope-o {
+	padding: 15px;
+}
+
+.contact a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.devicon-github-plain {
+	font-size: 50px;
+	padding: 20px;
+}
+
+
+
+
